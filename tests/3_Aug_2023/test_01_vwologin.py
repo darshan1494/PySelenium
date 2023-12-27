@@ -31,11 +31,11 @@ def test_vwologin():
     # driver = webdriver.Chrome(options=chrome_options)
     LOGGER = logging.getLogger(__name__)
     driver = webdriver.Chrome()
-    driver.maximize_window() # This function does the same thing as above function
+    driver.maximize_window() # This function also maximize window as above function.
     driver.get("https://app.vwo.com") # driver.navigate.To() is not available in Python like as it is in Java.
-    email_address_ele=driver.find_element(By.ID,"login-username")
-    password_ele=driver.find_element(By.NAME,"password")
-    sign_in_button_ele=driver.find_element(By.ID,"js-login-btn")
+    email_address_ele = driver.find_element(By.ID,"login-username")
+    password_ele = driver.find_element(By.NAME,"password")
+    sign_in_button_ele = driver.find_element(By.ID,"js-login-btn")
 
     email_address_ele.send_keys("darshants.1494@gmail.com")
     password_ele.send_keys("Admin@123")
