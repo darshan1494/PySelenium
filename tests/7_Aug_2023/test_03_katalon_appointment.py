@@ -58,9 +58,13 @@ def test_katalon_appointment_positive():
     driver.find_element(By.ID,"chk_hospotal_readmission").click()
     driver.find_element(By.NAME,"programs").click()
 
+    time.sleep(5)
+
     driver.find_element(By.ID, "txt_visit_date").send_keys("01/01/2024")
     driver.find_element(By.NAME, "comment").send_keys("Need Doctor Appointment")
     driver.find_element(By.ID,"btn-book-appointment").click()
+
+    time.sleep(5)
 
     heading_h2= driver.find_element(By.TAG_NAME, "h2")
     #LOGGER.info('title is-> ' + heading_h2)
