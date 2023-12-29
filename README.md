@@ -12,3 +12,8 @@
 
 #### Command to execute katalon appointment testcase
 ` pytest tests/7_Aug_2023/test_03_katalon_appointment.py -s -v --html=report.html`
+
+
+#### Command to execute Explicit wait : tests/10_Aug_2023/test_01_wait_vwologintest.py
+`pytest -s -v --html=report.html tests/10_Aug_2023/test_01_wait_vwologintest.py`
+
