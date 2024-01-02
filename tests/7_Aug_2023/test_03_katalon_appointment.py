@@ -67,7 +67,7 @@ def test_katalon_appointment_positive():
     time.sleep(5)
 
     heading_h2= driver.find_element(By.TAG_NAME, "h2")
-    #LOGGER.info('title is-> ' + heading_h2)
+    LOGGER.info('title is-> ' + heading_h2.text)
     assert "Appointment Confirmation" in heading_h2.text
 
 
