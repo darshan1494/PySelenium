@@ -21,7 +21,7 @@ def test_10_actions():
     link = driver.find_element(By.LINK_TEXT,"Click Here")
     link.click()
 
-    window_handles= driver.window_handles
+    window_handles = driver.window_handles
     print(window_handles)
 
     for handle in window_handles:
@@ -31,4 +31,4 @@ def test_10_actions():
             break
 
     driver.switch_to.window(main_window_handle) # move back to the main/parent window
-    time.sleep(10)
+    time.sleep(6)
