@@ -64,13 +64,13 @@ def test_vwo_login(driver, username,password, result):
         assert "https://app.vwo.com/#/dashboard" in driver.current_url
 
     # Alternate way to handle above logic if we don't know whether it is pass or fail:
-    print(username, password, driver.current_url)
-    if result == "fail":
-        failed_tc = driver.find_element(By.ID, "js-notification-box-msg").is_displayed()
-        if failed_tc:
-            assert error_message in "Your email, password, IP address or location did not match"
-    else:
-        assert "https://app.vwo.com/#/dashboard" in driver.current_url # If error message is not displayed assertion will be different, which means it's successful login
+    # print(username, password, driver.current_url)
+    # if result == "fail":
+    #     failed_tc = driver.find_element(By.ID, "js-notification-box-msg").is_displayed()
+    #     if failed_tc:
+    #         assert failed_tc in "Your email, password, IP address or location did not match"
+    # else:
+    #     assert "https://app.vwo.com/#/dashboard" in driver.current_url # If error message is not displayed assertion will be different, which means it's successful login
 
 
 
