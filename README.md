@@ -17,3 +17,5 @@
 #### Command to execute Explicit wait : tests/10_Aug_2023/test_01_wait_vwologintest.py
 `pytest -s -v --html=report.html tests/10_Aug_2023/test_01_wait_vwologintest.py`
 
+#### Command to install pytest-excel(Data Driven Testing)
+    `pip install pytest-excel`

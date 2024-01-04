@@ -7,6 +7,7 @@ from tests.utils.JSUtil import JSUtils
 @pytest.fixture # Fixture is a method in which code can be executed and basically injects whatever it returns to the following test case functions
 def driver():
     driver = webdriver.Chrome()
+    driver.maximize_window()
     yield driver # yield can be used only in case of fixtures.
     driver.quit() # Once webdriver is done with its execution, yield helps to close the browser.
     # In Fixture we can Read a File, Read from DB, Create Webdriver, set data, configurations...
